@@ -13,6 +13,7 @@ from config import (
     DB_URI,
     FORCE_MSG,
     FORCE_SUB_CHANNEL,
+    FORCE_SUB_CHANNEL_2,
     FORCE_SUB_GROUP,
     HEROKU_API_KEY,
     HEROKU_APP_NAME,
@@ -34,7 +35,7 @@ async def get_bot_logs(client: Bot, m: Message):
             await m.reply_document(
                 bot_log_path,
                 quote=True,
-                caption="<b>Ini Logs Bot ini</b>",
+                caption="<b>It's Bot's Logs</b>",
             )
         except Exception as e:
             os.remove(bot_log_path)
@@ -57,6 +58,7 @@ ADMINS = <code>{ADMINS}</code>
 <u><b>CUSTOM VARS</b></u>
 CHANNEL_ID = <code>{CHANNEL_ID}</code>
 FORCE_SUB_CHANNEL = <code>{FORCE_SUB_CHANNEL}</code>
+FORCE_SUB_CHANNEL_2 = <code>{FORCE_SUB_CHANNEL_2}</code>
 FORCE_SUB_GROUP = <code>{FORCE_SUB_GROUP}</code>
 PROTECT_CONTENT = <code>{PROTECT_CONTENT}</code>
 START_MSG = <code>{START_MSG}</code>
