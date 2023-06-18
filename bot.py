@@ -46,7 +46,7 @@ class Bot(Client):
         except Exception as a:
             self.LOGGER(__name__).warning(a)
             self.LOGGER(__name__).info(
-                "Stop Bots. Join Groups https://t.me/SharingUserbot untuk Bantuan"
+                "Bot Stopped. Join Groups https://t.me/+tM8mLoGDA8BhZDI1 for Help"
             )
             sys.exit()
 
@@ -67,10 +67,10 @@ class Bot(Client):
                     "Bot can't fetch invite link from FORCE_SUB_CHANNEL!"
                 )
                 self.LOGGER(__name__).warning(
-                    f"Be sure @{self.username} is admin on the channel, Chat ID F-Subs Channel Saat Ini: {FORCE_SUB_CHANNEL}"
+                    f"Be sure @{self.username} is admin on the channel, Current Chat ID F-Subs Channel: {FORCE_SUB_CHANNEL}"
                 )
                 self.LOGGER(__name__).info(
-                    "Bot Stopped. Gabung Group https://t.me/+RFhK8KESCQNlZWZl untuk Bantuan"
+                    "Bot Stopped. Join Groups https://t.me/+tM8mLoGDA8BhZDI1 for Help"
                 )
                 sys.exit()
 
@@ -88,13 +88,13 @@ class Bot(Client):
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
-                    "Bot can't fetch invite link from FORCE_SUB_CHANNEL!"
+                    "Bot can't fetch invite link from FORCE_SUB_CHANNEL_2!"
                 )
                 self.LOGGER(__name__).warning(
-                    f"Be sure @{self.username} is admin on the channel, Chat ID F-Subs Channel Saat Ini: {FORCE_SUB_CHANNEL_2}"
+                    f"Be sure @{self.username} is admin on the channel, Current Chat ID F-Subs Channel: {FORCE_SUB_CHANNEL_2}"
                 )
                 self.LOGGER(__name__).info(
-                    "Bot Stopped. Gabung Group https://t.me/+RFhK8KESCQNlZWZl untuk Bantuan"
+                    "Bot Stopped. Join Groups https://t.me/+tM8mLoGDA8BhZDI1 for Help"
                 )
                 sys.exit()
 
@@ -112,13 +112,13 @@ class Bot(Client):
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
-                    "Bot tidak dapat Mengambil link invite dari FORCE_SUB_GROUP!"
+                    "Bot unable to Fetch invite link from FORCE_SUB_GROUP!"
                 )
                 self.LOGGER(__name__).warning(
-                    f"Pastikan @{self.username} adalah admin di Group Tersebut, Chat ID F-Subs Group Saat Ini: {FORCE_SUB_GROUP}"
+                    f"Pastikan @{self.username} is an admin in the group, Current Chat ID F-Subs Group: {FORCE_SUB_GROUP}"
                 )
                 self.LOGGER(__name__).info(
-                    "Bot Berhenti. Gabung Group https://t.me/SharingUserbot untuk Bantuan"
+                    "Bot Stopped. Join Groups https://t.me/+tM8mLoGDA8BhZDI1 for Help"
                 )
                 sys.exit()
 
@@ -133,16 +133,16 @@ class Bot(Client):
         except Exception as e:
             self.LOGGER(__name__).warning(e)
             self.LOGGER(__name__).warning(
-                f"Pastikan @{self.username} adalah admin di Channel DataBase anda, CHANNEL_ID Saat Ini: {CHANNEL_ID}"
+                f"Pastikan @{self.username} is the admin in your Channel DataBase, Current CHANNEL_ID: {CHANNEL_ID}"
             )
             self.LOGGER(__name__).info(
-                "Bot Berhenti. Gabung Group https://t.me/SharingUserbot untuk Bantuan"
+                "Bot Stopped. Join Groups https://t.me/+tM8mLoGDA8BhZDI1 for Help"
             )
             sys.exit()
 
         self.set_parse_mode(ParseMode.HTML)
         self.LOGGER(__name__).info(
-            f"[🔥 BERHASIL DIAKTIFKAN! 🔥]\n\nBOT Dibuat oleh @{OWNER}\nJika @{OWNER} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/SharingUserbot"
+            f"[🔥 SUCCESSFULLY ACTIVATED! 🔥]\n\nBOT Made by @{OWNER}\nJika @{OWNER} Need Help, Please Ask in the Group https://t.me/+tM8mLoGDA8BhZDI1"
         )
 
     async def stop(self, *args):
