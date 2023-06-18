@@ -39,8 +39,8 @@ class Data:
 
     buttons = [
         [
-            InlineKeyboardButton("ᴛᴇɴᴛᴀɴɢ sᴀʏᴀ", callback_data="about"),
-            InlineKeyboardButton("ᴛᴜᴛᴜᴘ", callback_data="close")
+            InlineKeyboardButton("About me", callback_data="about"),
+            InlineKeyboardButton("Closed", callback_data="close")
         ],
     ]
 
