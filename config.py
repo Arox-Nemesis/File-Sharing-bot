@@ -22,7 +22,7 @@ API_HASH = os.environ.get("API_HASH", "")
 # ID Channel Database
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
 
-# NAMA OWNER
+# NAME OWNER
 OWNER = os.environ.get("OWNER", "")
 
 # Protect Content
