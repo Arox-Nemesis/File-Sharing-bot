@@ -13,6 +13,7 @@ from config import (
     APP_ID,
     CHANNEL_ID,
     FORCE_SUB_CHANNEL,
+    FORCE_SUB_CHANNEL_2,
     FORCE_SUB_GROUP,
     LOGGER,
     OWNER,
@@ -45,7 +46,7 @@ class Bot(Client):
         except Exception as a:
             self.LOGGER(__name__).warning(a)
             self.LOGGER(__name__).info(
-                "Bot Berhenti. Gabung Group https://t.me/SharingUserbot untuk Bantuan"
+                "Stop Bots. Join Groups https://t.me/SharingUserbot untuk Bantuan"
             )
             sys.exit()
 
