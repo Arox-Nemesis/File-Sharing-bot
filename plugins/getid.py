@@ -14,7 +14,7 @@ async def showid(client, message):
     if chat_type == "private":
         user_id = message.chat.id
         await message.reply_text(
-            f"<b>User ID anda adalah:</b> <code>{user_id}</code>", quote=True
+            f"<b>Your User ID is:</b> <code>{user_id}</code>", quote=True
         )
 
     elif chat_type in ["group", "supergroup"]:
