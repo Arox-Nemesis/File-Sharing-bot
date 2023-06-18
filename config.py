@@ -13,7 +13,7 @@ load_dotenv("config.env")
 # Bot Token Take it from @Botfather
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
-# Enter the APP ID, take it on the my.telegram.org
+# APP ID, from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", ""))
 
 # API Hash from my.telegram.org
