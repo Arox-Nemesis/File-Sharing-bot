@@ -30,7 +30,7 @@ async def subschannel(filter, client, update):
     return member.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.MEMBER]
 
 
-async def subschannel(filter, client, update):
+async def subschannel2(filter, client, update):
     if not FORCE_SUB_CHANNEL_2:
         return True
     user_id = update.from_user.id
