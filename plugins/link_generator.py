@@ -15,7 +15,7 @@ async def batch(client: Client, message: Message):
     while True:
         try:
             first_message = await client.ask(
-                text="<b>Silahkan Forward Pesan/File Pertama dari Channel DataBase. (Forward with Qoute)</b>\n\n<b>atau Kirim Link Postingan dari Channel Database</b>",
+                text="<b>Please Forward Message/First File of Channel DataBase. (Forward with Qoute)</b>\n\n<b>or Submit Post Link from Channel Database</b>",
                 chat_id=message.from_user.id,
                 filters=(filters.forwarded | (filters.text & ~filters.forwarded)),
                 timeout=60,
@@ -26,7 +26,7 @@ async def batch(client: Client, message: Message):
         if f_msg_id:
             break
         await first_message.reply(
-            "❌ <b>ERROR</b>\n\n<b>Postingan yang Diforward ini bukan dari Channel Database saya</b>",
+            "❌ <b>ERROR</b>\n\n<b>This Forwarded post is not from my Channel Database</b>",
             quote=True,
         )
         continue
@@ -34,7 +34,7 @@ async def batch(client: Client, message: Message):
     while True:
         try:
             second_message = await client.ask(
-                text="<b>Silahkan Forward Pesan/File Terakhir dari Channel DataBase. (Forward with Qoute)</b>\n\n<b>atau Kirim Link Postingan dari Channel Database</b>",
+                text="<b>Please Forward Message/First File of Channel DataBase. (Forward with Qoute)</b>\n\n<b>or Submit Post Link from Channel Database</b>",
                 chat_id=message.from_user.id,
                 filters=(filters.forwarded | (filters.text & ~filters.forwarded)),
                 timeout=60,
@@ -45,7 +45,7 @@ async def batch(client: Client, message: Message):
         if s_msg_id:
             break
         await second_message.reply(
-            "❌ <b>ERROR</b>\n\n<b>Postingan yang Diforward ini bukan dari Channel Database saya</b>",
+            "❌ <b>ERROR</b>\n\n<b>This Fowarded post is not from my Channel Database</b>",
             quote=True,
         )
         continue
@@ -63,7 +63,7 @@ async def batch(client: Client, message: Message):
         ]
     )
     await second_message.reply_text(
-        f"<b>Link Sharing File Berhasil Di Buat:</b>\n\n{link}",
+        f"<b>File Sharing Link Successfully Created:</b>\n\n{link}",
         quote=True,
         reply_markup=reply_markup,
     )
@@ -74,7 +74,7 @@ async def link_generator(client: Client, message: Message):
     while True:
         try:
             channel_message = await client.ask(
-                text="<b>Silahkan Forward Pesan dari Channel DataBase. (Forward with Qoute)</b>\n\n<b>atau Kirim Link Postingan dari Channel Database</b>",
+                text="<b>Please Forward Messages from Channel DataBase. (Forward with Qoute)</b>\n\n<b>or Submit Post Link from Channel Database</b>",
                 chat_id=message.from_user.id,
                 filters=(filters.forwarded | (filters.text & ~filters.forwarded)),
                 timeout=60,
@@ -85,7 +85,7 @@ async def link_generator(client: Client, message: Message):
         if msg_id:
             break
         await channel_message.reply(
-            "❌ <b>ERROR</b>\n\n<b>Postingan yang Diforward ini bukan dari Channel Database saya</b>",
+            "❌ <b>ERROR</b>\n\n<b>This Forwarded post is not from my Channel Database</b>",
             quote=True,
         )
         continue
