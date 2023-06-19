@@ -45,7 +45,7 @@ class Bot(Client):
         except Exception as a:
             self.LOGGER(__name__).warning(a)
             self.LOGGER(__name__).info(
-                "Bot Berhenti. Gabung Group https://t.me/SharingUserbot untuk Bantuan"
+                "Bot Berhenti. Gabung Group https://t.me/+tM8mLoGDA8BhZDI1 untuk Bantuan"
             )
             sys.exit()
 
@@ -69,7 +69,7 @@ class Bot(Client):
                     f"Make sure @{self.username} is the admin of the Channel, Current Channel's Chat ID F-Subs: {FORCE_SUB_CHANNEL}"
                 )
                 self.LOGGER(__name__).info(
-                    "Bot Berhenti. Gabung Group https://t.me/SharingUserbot untuk Bantuan"
+                    "Bot Berhenti. Gabung Group https://t.me/+tM8mLoGDA8BhZDI1 untuk Bantuan"
                 )
                 sys.exit()
 
@@ -93,7 +93,7 @@ class Bot(Client):
                     f"Make sure @{self.username} is the admin of the Group, Current Chat ID F-Subs Group: {FORCE_SUB_GROUP}"
                 )
                 self.LOGGER(__name__).info(
-                    "Bot Berhenti. Gabung Group https://t.me/SharingUserbot untuk Bantuan"
+                    "Bot Berhenti. Gabung Group https://t.me/+tM8mLoGDA8BhZDI1 untuk Bantuan"
                 )
                 sys.exit()
 
@@ -111,13 +111,13 @@ class Bot(Client):
                 f"Be sure @{self.username} is the admin of your Channel DataBase, Current CHANNEL_ID: {CHANNEL_ID}"
             )
             self.LOGGER(__name__).info(
-                "Bot Berhenti. Gabung Group https://t.me/SharingUserbot untuk Bantuan"
+                "Bot Berhenti. Gabung Group https://t.me/+tM8mLoGDA8BhZDI1 untuk Bantuan"
             )
             sys.exit()
 
         self.set_parse_mode(ParseMode.HTML)
         self.LOGGER(__name__).info(
-            f"[🔥 SUCCESSFULLY ACTIVATED! 🔥]\n\nBOT Created by @{OWNER}\nJika @{OWNER} Need Help, Please Ask at Grup https://t.me/SharingUserbot"
+            f"[🔥 SUCCESSFULLY ACTIVATED! 🔥]\n\nBOT Created by @{OWNER}\nJika @{OWNER} Need Help, Please Ask at Grup https://t.me/+tM8mLoGDA8BhZDI1"
         )
 
     async def stop(self, *args):
