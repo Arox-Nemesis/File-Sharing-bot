@@ -63,10 +63,10 @@ class Bot(Client):
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
-                    "Bot tidak dapat Mengambil link invite dari FORCE_SUB_CHANNEL!"
+                    "Bot can't fetch invite link from FORCE_SUB_CHANNEL!"
                 )
                 self.LOGGER(__name__).warning(
-                    f"Pastikan @{self.username} adalah admin di Channel Tersebut, Chat ID F-Subs Channel Saat Ini: {FORCE_SUB_CHANNEL}"
+                    f"Make sure @{self.username} is the admin of the Channel, Current Channel's Chat ID F-Subs: {FORCE_SUB_CHANNEL}"
                 )
                 self.LOGGER(__name__).info(
                     "Bot Berhenti. Gabung Group https://t.me/SharingUserbot untuk Bantuan"
@@ -87,10 +87,10 @@ class Bot(Client):
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
-                    "Bot tidak dapat Mengambil link invite dari FORCE_SUB_GROUP!"
+                    "Bot can't fetch invite link from FORCE_SUB_GROUP!"
                 )
                 self.LOGGER(__name__).warning(
-                    f"Pastikan @{self.username} adalah admin di Group Tersebut, Chat ID F-Subs Group Saat Ini: {FORCE_SUB_GROUP}"
+                    f"Make sure @{self.username} is the admin of the Group, Current Chat ID F-Subs Group: {FORCE_SUB_GROUP}"
                 )
                 self.LOGGER(__name__).info(
                     "Bot Berhenti. Gabung Group https://t.me/SharingUserbot untuk Bantuan"
@@ -108,7 +108,7 @@ class Bot(Client):
         except Exception as e:
             self.LOGGER(__name__).warning(e)
             self.LOGGER(__name__).warning(
-                f"Pastikan @{self.username} adalah admin di Channel DataBase anda, CHANNEL_ID Saat Ini: {CHANNEL_ID}"
+                f"Be sure @{self.username} is the admin of your Channel DataBase, Current CHANNEL_ID: {CHANNEL_ID}"
             )
             self.LOGGER(__name__).info(
                 "Bot Berhenti. Gabung Group https://t.me/SharingUserbot untuk Bantuan"
@@ -117,7 +117,7 @@ class Bot(Client):
 
         self.set_parse_mode(ParseMode.HTML)
         self.LOGGER(__name__).info(
-            f"[🔥 BERHASIL DIAKTIFKAN! 🔥]\n\nBOT Dibuat oleh @{OWNER}\nJika @{OWNER} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/SharingUserbot"
+            f"[🔥 SUCCESSFULLY ACTIVATED! 🔥]\n\nBOT Created by @{OWNER}\nJika @{OWNER} Need Help, Please Ask at Grup https://t.me/SharingUserbot"
         )
 
     async def stop(self, *args):
