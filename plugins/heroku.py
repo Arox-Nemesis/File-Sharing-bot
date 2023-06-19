@@ -126,7 +126,7 @@ async def set_var(client: Bot, message: Message):
             await message.reply_text(f"Successfully Changing var {to_set} become {value}")
         else:
             await message.reply_text(
-                f"Berhasil Menambahkan var {to_set} become {value}"
+                f"Successfully Added var {to_set} become {value}"
             )
         heroku_config[to_set] = value
     else:
